@@ -1,6 +1,6 @@
 <template>
   <div class="relative bg-white overflow-hidden">
-    <div class="max-w-screen-xl mx-auto ">
+    <div class="max-w-screen-xl mx-auto">
       <div
         class="relative z-10 pb-8 bg-white sm:pb-16 md:pb-20 lg:pb-28 xl:pb-32 max-w-5xl mx-auto"
       >
@@ -169,7 +169,8 @@
               </div>
               <div class="mt-3 sm:mt-0 sm:ml-3">
                 <a
-                  href="#"
+                  :href="groupLink"
+                  target="_blank"
                   class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-indigo-700 bg-indigo-100 hover:text-indigo-600 hover:bg-indigo-50 focus:outline-none focus:shadow-outline focus:border-indigo-300 transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10"
                 >
                   Grup Telegram
@@ -363,7 +364,8 @@
               </div>
               <div class="ml-3 inline-flex rounded-md shadow">
                 <a
-                  href="#"
+                  :href="groupLink"
+                  target="_blank"
                   class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-indigo-600 bg-white hover:text-indigo-500 focus:outline-none focus:shadow-outline transition duration-150 ease-in-out"
                 >
                   Grup Telegram
@@ -382,13 +384,20 @@
 export default {
   data() {
     return {
-      menu: false
+      menu: false,
+      groupLink: 'https://t.me/joinchat/Hu0t6BzWXRxxTuq6SGB0AQ',
     }
   },
   methods: {
-    toggleNav: function() {
+    toggleNav: function () {
       this.menu = !this.menu
-    }
-  }
+    },
+  },
 }
 </script>
+
+<style scoped>
+* {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+</style>
