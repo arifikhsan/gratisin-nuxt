@@ -19,7 +19,7 @@ export default {
   /*
    ** Customize the progress-bar color
    */
-  loading: { color: '#fff' },
+  loading: { color: '#5A67D8' },
   /*
    ** Global CSS
    */
@@ -40,6 +40,7 @@ export default {
     '@nuxtjs/axios',
     // Doc: https://github.com/nuxt-community/dotenv-module
     '@nuxtjs/dotenv',
+    'nuxt-webfontloader',
   ],
   /*
    ** Axios module configuration
@@ -54,5 +55,12 @@ export default {
      ** You can extend webpack config here
      */
     extend(config, ctx) {},
+  },
+  webfontloader: {
+    google: {
+      families: [
+        'Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap',
+      ],
+    },
   },
 }

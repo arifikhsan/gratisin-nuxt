@@ -1,7 +1,7 @@
 {
   "name": "gratisin-nuxt",
   "version": "1.0.0",
-  "description": "My slick Nuxt.js project",
+  "description": "Gratisin adalah sebuah website yang berisi tentang informasi barang dan jasa gratis di Indonesia.",
   "author": "Arif Ikhsanudin",
   "private": true,
   "scripts": {
@@ -15,7 +15,8 @@
   "dependencies": {
     "@nuxtjs/axios": "^5.11.0",
     "@nuxtjs/dotenv": "^1.4.1",
-    "nuxt": "^2.12.2"
+    "nuxt": "^2.12.2",
+    "nuxt-webfontloader": "^1.1.0"
   },
   "devDependencies": {
     "@nuxtjs/tailwindcss": "^2.0.0",
