@@ -1,10 +1,10 @@
 <template>
-  <div class="relative bg-white overflow-hidden">
+  <div class="relative overflow-hidden bg-white">
     <div class="max-w-screen-xl mx-auto">
       <div
-        class="relative z-10 pb-8 bg-white sm:pb-16 md:pb-20 lg:pb-28 xl:pb-32 max-w-5xl mx-auto"
+        class="relative z-10 max-w-5xl pb-8 mx-auto bg-white sm:pb-16 md:pb-20 lg:pb-28 xl:pb-32"
       >
-        <div class="relative pt-6 px-4 sm:px-6 lg:px-8">
+        <div class="relative px-4 pt-6 sm:px-6 lg:px-8">
           <nav
             class="relative flex items-center justify-between sm:h-10 lg:justify-start"
           >
@@ -15,14 +15,14 @@
                 <nuxt-link to="/">
                   <h1 class="text-2xl font-bold text-indigo-600">Gratisin</h1>
                 </nuxt-link>
-                <div class="-mr-2 flex items-center md:hidden">
+                <div class="flex items-center -mr-2 md:hidden">
                   <button
                     @click="toggleNav"
                     type="button"
-                    class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500 transition duration-150 ease-in-out"
+                    class="inline-flex items-center justify-center p-2 text-gray-400 transition duration-150 ease-in-out rounded-md hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500"
                   >
                     <svg
-                      class="h-6 w-6"
+                      class="w-6 h-6"
                       stroke="currentColor"
                       fill="none"
                       viewBox="0 0 24 24"
@@ -41,22 +41,22 @@
             <div class="hidden md:block md:ml-10 md:pr-4">
               <a
                 href="#"
-                class="font-medium text-gray-500 hover:text-gray-900 focus:outline-none focus:text-gray-900 transition duration-150 ease-in-out"
+                class="font-medium text-gray-500 transition duration-150 ease-in-out hover:text-gray-900 focus:outline-none focus:text-gray-900"
                 >Barang
               </a>
               <a
                 href="#"
-                class="ml-8 font-medium text-gray-500 hover:text-gray-900 focus:outline-none focus:text-gray-900 transition duration-150 ease-in-out"
+                class="ml-8 font-medium text-gray-500 transition duration-150 ease-in-out hover:text-gray-900 focus:outline-none focus:text-gray-900"
                 >Jasa
               </a>
               <a
                 href="#"
-                class="ml-8 font-medium text-gray-500 hover:text-gray-900 focus:outline-none focus:text-gray-900 transition duration-150 ease-in-out"
+                class="ml-8 font-medium text-gray-500 transition duration-150 ease-in-out hover:text-gray-900 focus:outline-none focus:text-gray-900"
                 >Tentang
               </a>
               <a
                 href="#"
-                class="ml-8 font-medium text-indigo-600 hover:text-indigo-900 focus:outline-none focus:text-indigo-700 transition duration-150 ease-in-out"
+                class="ml-8 font-medium text-indigo-600 transition duration-150 ease-in-out hover:text-indigo-900 focus:outline-none focus:text-indigo-700"
                 >Login
               </a>
             </div>
@@ -74,14 +74,14 @@
           To: "opacity-0 scale-95"
       -->
         <div
-          class="absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden"
+          class="absolute inset-x-0 top-0 p-2 transition origin-top-right transform md:hidden"
         >
           <div class="rounded-lg shadow-md">
             <div
               v-show="menu"
-              class="rounded-lg bg-white shadow-xs overflow-hidden"
+              class="overflow-hidden bg-white rounded-lg shadow-xs"
             >
-              <div class="px-5 pt-4 flex items-center justify-between">
+              <div class="flex items-center justify-between px-5 pt-4">
                 <div>
                   <h1 class="text-2xl font-bold text-indigo-600">Gratisin</h1>
                 </div>
@@ -89,10 +89,10 @@
                   <button
                     @click="toggleNav"
                     type="button"
-                    class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500 transition duration-150 ease-in-out"
+                    class="inline-flex items-center justify-center p-2 text-gray-400 transition duration-150 ease-in-out rounded-md hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500"
                   >
                     <svg
-                      class="h-6 w-6"
+                      class="w-6 h-6"
                       stroke="currentColor"
                       fill="none"
                       viewBox="0 0 24 24"
@@ -110,24 +110,24 @@
               <div class="px-2 pt-2 pb-3">
                 <a
                   href="#"
-                  class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-50 transition duration-150 ease-in-out"
+                  class="block px-3 py-2 text-base font-medium text-gray-700 transition duration-150 ease-in-out rounded-md hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-50"
                   >Barang
                 </a>
                 <a
                   href="#"
-                  class="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-50 transition duration-150 ease-in-out"
+                  class="block px-3 py-2 mt-1 text-base font-medium text-gray-700 transition duration-150 ease-in-out rounded-md hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-50"
                   >Jasa
                 </a>
                 <a
                   href="#"
-                  class="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-50 transition duration-150 ease-in-out"
+                  class="block px-3 py-2 mt-1 text-base font-medium text-gray-700 transition duration-150 ease-in-out rounded-md hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-50"
                   >Tentang
                 </a>
               </div>
               <div>
                 <a
                   href="#"
-                  class="block w-full px-5 py-3 text-center font-medium text-indigo-600 bg-gray-50 hover:bg-gray-100 hover:text-indigo-700 focus:outline-none focus:bg-gray-100 focus:text-indigo-700 transition duration-150 ease-in-out"
+                  class="block w-full px-5 py-3 font-medium text-center text-indigo-600 transition duration-150 ease-in-out bg-gray-50 hover:bg-gray-100 hover:text-indigo-700 focus:outline-none focus:bg-gray-100 focus:text-indigo-700"
                 >
                   Login
                 </a>
@@ -138,21 +138,21 @@
 
         <!-- hero -->
         <div
-          class="my-20 mx-auto max-w-screen-xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28"
+          class="max-w-screen-xl px-4 mx-auto my-20 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28"
         >
           <div class="sm:text-center lg:text-left">
             <h2
-              class="text-4xl tracking-tight leading-10 font-extrabold text-gray-900 sm:text-5xl sm:leading-none md:text-6xl"
+              class="text-4xl font-extrabold leading-10 tracking-tight text-gray-900 sm:text-5xl sm:leading-none md:text-6xl"
             >
               <span>
-                Cari barang atau jasa
+                Cari barang
               </span>
               <span class="text-indigo-600">yang gratis?</span>
             </h2>
             <p
               class="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0"
             >
-              Di Gratisin, kami menyediakan layanan jasa atau barang di
+              Di Gratisin, kami menyediakan barang di
               Indonesia dengan tanpa harga, atau
               <span class="text-indigo-500">gratis</span>!
             </p>
@@ -162,7 +162,7 @@
               <div class="rounded-md shadow">
                 <nuxt-link
                   to="/dashboard"
-                  class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-500 focus:outline-none focus:shadow-outline transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10"
+                  class="flex items-center justify-center w-full px-8 py-3 text-base font-medium leading-6 text-white transition duration-150 ease-in-out bg-indigo-600 border border-transparent rounded-md hover:bg-indigo-500 focus:outline-none focus:shadow-outline md:py-4 md:text-lg md:px-10"
                 >
                   Lihat listing
                 </nuxt-link>
@@ -171,7 +171,7 @@
                 <a
                   :href="groupLink"
                   target="_blank"
-                  class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-indigo-700 bg-indigo-100 hover:text-indigo-600 hover:bg-indigo-50 focus:outline-none focus:shadow-outline focus:border-indigo-300 transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10"
+                  class="flex items-center justify-center w-full px-8 py-3 text-base font-medium leading-6 text-indigo-700 transition duration-150 ease-in-out bg-indigo-100 border border-transparent rounded-md hover:text-indigo-600 hover:bg-indigo-50 focus:outline-none focus:shadow-outline focus:border-indigo-300 md:py-4 md:text-lg md:px-10"
                 >
                   Grup Telegram
                 </a>
@@ -182,20 +182,20 @@
         <!-- end hero -->
         <!-- start feature -->
         <div class="py-12 bg-white">
-          <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="max-w-screen-xl px-4 mx-auto sm:px-6 lg:px-8">
             <div class="lg:text-center">
               <p
-                class="text-base leading-6 text-indigo-600 font-semibold tracking-wide uppercase"
+                class="text-base font-semibold leading-6 tracking-wide text-indigo-600 uppercase"
               >
                 Sebuah Konsep
               </p>
               <h3
-                class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl sm:leading-10"
+                class="mt-2 text-3xl font-extrabold leading-8 tracking-tight text-gray-900 sm:text-4xl sm:leading-10"
               >
                 Tempat untuk berbagi
               </h3>
               <p
-                class="mt-4 max-w-2xl text-xl leading-7 text-gray-500 lg:mx-auto"
+                class="max-w-2xl mt-4 text-xl leading-7 text-gray-500 lg:mx-auto"
               >
                 Tidak ada yang gratis. Pernyataan tersebut benar adanya, namun
                 masih ada kemungkinan kalau ada sesuatu yang benar benar gratis
@@ -209,10 +209,10 @@
                   <div class="flex">
                     <div class="flex-shrink-0">
                       <div
-                        class="flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white"
+                        class="flex items-center justify-center w-12 h-12 text-white bg-indigo-500 rounded-md"
                       >
                         <svg
-                          class="h-6 w-6"
+                          class="w-6 h-6"
                           fill="none"
                           viewBox="0 0 24 24"
                           stroke="currentColor"
@@ -227,7 +227,7 @@
                       </div>
                     </div>
                     <div class="ml-4">
-                      <h4 class="text-lg leading-6 font-medium text-gray-900">
+                      <h4 class="text-lg font-medium leading-6 text-gray-900">
                         Akses Global
                       </h4>
                       <p class="mt-2 text-base leading-6 text-gray-500">
@@ -241,10 +241,10 @@
                   <div class="flex">
                     <div class="flex-shrink-0">
                       <div
-                        class="flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white"
+                        class="flex items-center justify-center w-12 h-12 text-white bg-indigo-500 rounded-md"
                       >
                         <svg
-                          class="h-6 w-6"
+                          class="w-6 h-6"
                           fill="none"
                           viewBox="0 0 24 24"
                           stroke="currentColor"
@@ -259,7 +259,7 @@
                       </div>
                     </div>
                     <div class="ml-4">
-                      <h4 class="text-lg leading-6 font-medium text-gray-900">
+                      <h4 class="text-lg font-medium leading-6 text-gray-900">
                         Tidak ada biaya tersembunyi
                       </h4>
                       <p class="mt-2 text-base leading-6 text-gray-500">
@@ -274,10 +274,10 @@
                   <div class="flex">
                     <div class="flex-shrink-0">
                       <div
-                        class="flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white"
+                        class="flex items-center justify-center w-12 h-12 text-white bg-indigo-500 rounded-md"
                       >
                         <svg
-                          class="h-6 w-6"
+                          class="w-6 h-6"
                           fill="none"
                           viewBox="0 0 24 24"
                           stroke="currentColor"
@@ -292,8 +292,8 @@
                       </div>
                     </div>
                     <div class="ml-4">
-                      <h4 class="text-lg leading-6 font-medium text-gray-900">
-                        Tidak ada transaksi
+                      <h4 class="text-lg font-medium leading-6 text-gray-900">
+                        Tidak ada transfer uang
                       </h4>
                       <p class="mt-2 text-base leading-6 text-gray-500">
                         Tidak ada pembayaran untuk melakukan sesuatu secara
@@ -306,10 +306,10 @@
                   <div class="flex">
                     <div class="flex-shrink-0">
                       <div
-                        class="flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white"
+                        class="flex items-center justify-center w-12 h-12 text-white bg-indigo-500 rounded-md"
                       >
                         <svg
-                          class="h-6 w-6"
+                          class="w-6 h-6"
                           fill="none"
                           viewBox="0 0 24 24"
                           stroke="currentColor"
@@ -324,7 +324,7 @@
                       </div>
                     </div>
                     <div class="ml-4">
-                      <h4 class="text-lg leading-6 font-medium text-gray-900">
+                      <h4 class="text-lg font-medium leading-6 text-gray-900">
                         Komunitas aktif
                       </h4>
                       <p class="mt-2 text-base leading-6 text-gray-500">
@@ -342,10 +342,10 @@
         <!-- start cta -->
         <div class="bg-gray-50">
           <div
-            class="max-w-screen-xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8 lg:flex lg:items-center lg:justify-between"
+            class="max-w-screen-xl px-4 py-12 mx-auto sm:px-6 lg:py-16 lg:px-8 lg:flex lg:items-center lg:justify-between"
           >
             <h2
-              class="text-3xl leading-9 font-extrabold tracking-tight text-gray-900 sm:text-4xl sm:leading-10"
+              class="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 sm:text-4xl sm:leading-10"
             >
               Apakah Anda siap?
               <br />
@@ -353,20 +353,20 @@
                 >Saatnya untuk mencari sesuatu...</span
               >
             </h2>
-            <div class="mt-8 flex lg:flex-shrink-0 lg:mt-0 justify-center">
+            <div class="flex justify-center mt-8 lg:flex-shrink-0 lg:mt-0">
               <div class="inline-flex rounded-md shadow">
                 <nuxt-link
                   to="/dashboard"
-                  class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-500 focus:outline-none focus:shadow-outline transition duration-150 ease-in-out"
+                  class="inline-flex items-center justify-center px-5 py-3 text-base font-medium leading-6 text-white transition duration-150 ease-in-out bg-indigo-600 border border-transparent rounded-md hover:bg-indigo-500 focus:outline-none focus:shadow-outline"
                 >
                   Lihat Listing
                 </nuxt-link>
               </div>
-              <div class="ml-3 inline-flex rounded-md shadow">
+              <div class="inline-flex ml-3 rounded-md shadow">
                 <a
                   :href="groupLink"
                   target="_blank"
-                  class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-indigo-600 bg-white hover:text-indigo-500 focus:outline-none focus:shadow-outline transition duration-150 ease-in-out"
+                  class="inline-flex items-center justify-center px-5 py-3 text-base font-medium leading-6 text-indigo-600 transition duration-150 ease-in-out bg-white border border-transparent rounded-md hover:text-indigo-500 focus:outline-none focus:shadow-outline"
                 >
                   Grup Telegram
                 </a>
