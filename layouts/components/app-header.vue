@@ -45,7 +45,7 @@
             >Tambah barang
           </nuxt-link>
           <nuxt-link
-            to="/"
+            to="/barangku"
             class="ml-8 font-medium text-gray-500 transition duration-150 ease-in-out hover:text-gray-900 focus:outline-none focus:text-gray-900"
             >Barangku
           </nuxt-link>
@@ -118,7 +118,7 @@
                 Tambah barang
               </nuxt-link>
               <nuxt-link
-                to="/pertanyaanku"
+                to="/barangku"
                 class="block px-3 py-2 mt-1 text-base font-medium text-gray-700 transition duration-150 ease-in-out rounded-md hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-50"
               >
                 Barangku
