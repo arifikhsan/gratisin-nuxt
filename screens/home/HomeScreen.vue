@@ -145,7 +145,7 @@
               class="text-4xl font-extrabold leading-10 tracking-tight text-gray-900 sm:text-5xl sm:leading-none md:text-6xl"
             >
               <span>
-                Cari barang
+                Mau cari barang
               </span>
               <span class="text-indigo-600">yang gratis?</span>
             </h2>
