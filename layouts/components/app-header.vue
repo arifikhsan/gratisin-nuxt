@@ -162,6 +162,7 @@ export default {
     async logout() {
       await this.$auth.logout()
       await this.$apolloHelpers.onLogout()
+      this.$toast.success('Logout sukses', { duration: 6000 })
     },
   },
 }

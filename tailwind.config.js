@@ -7,7 +7,7 @@
 module.exports = {
   theme: {},
   variants: {},
-  plugins: [],
+  plugins: [require('@tailwindcss/custom-forms')],
   purge: {
     // Learn more on https://tailwindcss.com/docs/controlling-file-size/#removing-unused-css
     enabled: process.env.NODE_ENV === 'production',
@@ -15,7 +15,6 @@ module.exports = {
       'components/**/*.vue',
       'layouts/**/*.vue',
       'pages/**/*.vue',
-      'screens/**/*.vue',
       'plugins/**/*.js',
       'nuxt.config.js'
     ]
