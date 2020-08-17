@@ -1,3 +1,5 @@
+require('dotenv').config()
+
 export default {
   mode: 'spa',
   /*
@@ -41,12 +43,17 @@ export default {
     // Doc: https://github.com/nuxt-community/dotenv-module
     '@nuxtjs/dotenv',
     'nuxt-webfontloader',
+    '@nuxtjs/apollo',
+    '@nuxtjs/auth',
+    '@nuxtjs/toast',
   ],
   /*
    ** Axios module configuration
    ** See https://axios.nuxtjs.org/options
    */
-  axios: {},
+  axios: {
+    baseURL: process.env.REST_URL,
+  },
   /*
    ** Build configuration
    */
@@ -64,6 +71,28 @@ export default {
     },
   },
   server: {
-    port: 8000
-  }
+    port: 8000,
+  },
+  apollo: {
+    clientConfigs: {
+      default: {
+        httpEndpoint: process.env.GRAPHQL_URL,
+      },
+    },
+  },
+  auth: {
+    strategies: {
+      local: {
+        endpoints: {
+          login: { url: 'login', method: 'post', propertyName: 'access_token' },
+          logout: { url: 'logout', method: 'delete' },
+          user: { url: 'user', method: 'get', propertyName: 'user' },
+        },
+        // tokenRequired: true,
+        tokenType: 'Bearer',
+        // globalToken: true,
+        // autoFetchUser: true
+      },
+    },
+  },
 }
