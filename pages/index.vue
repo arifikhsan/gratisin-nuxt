@@ -253,7 +253,7 @@ export default {
   name: 'landing',
   layout: 'landing',
   head: {
-    title: 'Temukan jawaban dari pertanyaanmu',
+    title: 'Temukan barang yang gratis.',
   },
   data() {
     return {
