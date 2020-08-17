@@ -248,12 +248,16 @@
             v-for="item in list"
             :key="item.id"
           >
-            <h2 class="text-xl leading-snug text-indigo-600 font-bold">
+            <h2 class="text-2xl leading-snug text-indigo-600 font-bold">
               {{ item.title }}
             </h2>
             <p class="mt-4 text-gray-700">
               {{ item.desciption }}
             </p>
+            <hr class="my-4" />
+            <div class="flex justify-end">
+              <p>Disediakan oleh: {{ item.author.name }}</p>
+            </div>
           </div>
         </div>
       </div>
@@ -273,9 +277,7 @@ export default {
           desciption:
             'Id laboris ut voluptate officia ex. Enim ipsum aliquip excepteur nostrud mollit qui ipsum. Non exercitation laboris duis qui nostrud qui consectetur ea amet. Cupidatat irure anim sint nulla mollit et eu reprehenderit. Aute ea officia aute esse cupidatat eiusmod enim ipsum Lorem officia.',
           author: {
-            name: 'Arif Ikhsanudin',
-            email: 'arif.ikhsanudin.id@gmail.com',
-            phone_number: '089561784488',
+            name: 'Webkita',
           },
         },
       ],
