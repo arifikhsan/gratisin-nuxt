@@ -8,7 +8,7 @@
           :key="product.id"
         >
           <nuxt-link
-            to="#"
+            :to="{ name: 'barang-slug', params: { slug: product.slug } }"
             class="text-2xl font-bold leading-snug text-indigo-600"
           >
             {{ product.name }}
