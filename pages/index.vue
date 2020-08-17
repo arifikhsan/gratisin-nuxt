@@ -96,7 +96,7 @@
                     </div>
                     <div class="ml-4">
                       <h4 class="text-lg font-medium leading-6 text-gray-900">
-                        Akses Global
+                        Akses global
                       </h4>
                       <p class="mt-2 text-base leading-6 text-gray-500">
                         Temui berbagai kemungkinan yang belum pernah anda
