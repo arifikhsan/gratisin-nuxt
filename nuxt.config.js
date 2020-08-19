@@ -15,6 +15,11 @@ export default {
         name: 'description',
         content: process.env.npm_package_description || '',
       },
+      {
+        hid: 'dicoding:email',
+        name: 'dicoding:email',
+        content: 'arif.ikhsanudin.developer@gmail.com',
+      },
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
   },
